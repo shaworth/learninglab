@@ -19,5 +19,7 @@
  * Build a tagged image: ```docker build -t ${USER}-apache2 webserver```
 
 ## Run the Apache2 docker image
- * Run the tagged image: ```docker run -dit --name ${USER}-running-app -p 8080:80 ${USER}-apache2
+ * Run the tagged image: ```docker run -dit --name ${USER}-running-app -p 8080:80 ${USER}-apache2```
+ 
+ 
  
