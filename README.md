@@ -18,7 +18,10 @@
 
 ## Build Apache2 docker image
  * Change into the correct directory: ```cd ~/source/learning_lab```
- * Build a tagged image: ```docker build -t ${USER}-apache2 webserver```
+ * Build a tagged image: 
+ 
+ ```docker build -t ${USER}-apache2 webserver```
+ 
 Remove the comments from the Docker file, repeat the above
 
 ## Run the Apache2 docker image with the specified TCP/IP port
