@@ -50,6 +50,9 @@ In the following command, the TCP port on the host will equal 10000 + your UID, 
  -p $(expr 10000 + ${UID}):80 \
  ${USER}-apache2
  ```
+ 
+ Edit source/Kitty/index.html
+ 
  * Stop the container: ```docker stop ${USER}-kitty-app```
  * Remove the container: ```docker rm ${USER}-kitty-app```
 
