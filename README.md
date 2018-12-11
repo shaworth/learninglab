@@ -18,10 +18,12 @@
 ## Build Apache2 docker image
  * Change into the correct directory: ```cd ~/source/learning_lab```
  * Build a tagged image: ```docker build -t ${USER}-apache2 webserver```
+Remove the comments from the Docker file, repeat the above
 
 ## Run the Apache2 docker image with the specified TCP/IP port
 In the following command, the TCP port on the host will equal 10000 + your UID 
  * Run the tagged image as a container: ```docker run -dit --name ${USER}-running-app -p $(expr 10000 + ${UID}):80 ${USER}-apache2```
+ * Show the running containers: ```docker ps```
  * Stop the container: ```docker stop ${USER}-running-app```
  * Remove the container: ```docker rm ${USER}-running-app```
 
