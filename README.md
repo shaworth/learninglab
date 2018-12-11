@@ -3,7 +3,7 @@
 ## Basic Shell (bash) concepts
  * Echo command: ```echo "Hello"```
  * Echo command w variable: ```echo "Hello $USER"```
- * Again: ```echo "1${UID}"```
+ * Again: ```echo "${UID}"```
 
 ## Prepare the environment
  * Remove existing files from source: ```rm -rf ~/source/*```
