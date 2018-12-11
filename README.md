@@ -31,6 +31,10 @@ In the following command, the TCP port on the host will equal 10000 + your UID
  docker run -dit --name ${USER}-running-app -p $(expr 10000 + ${UID}):80 ${USER}-apache2
  ```
  
+ Print the link to your container
+ ```echo "http://172.31.0.9:$(expr 10000 + ${UID})/"```
+ Copy and past the results into a new browser tab
+ 
  * Show the running containers: ```docker ps```
  * Stop the container: ```docker stop ${USER}-running-app```
  * Remove the container: ```docker rm ${USER}-running-app```
