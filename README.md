@@ -2,7 +2,7 @@
 
 ## Basic Shell (bash) concepts
  * Echo command: ```echo "Hello"```
- * Echo command w variable: ```echo "Hello $USER"```
+ * Echo command with variable: ```echo "Hello $USER"```
 
 ## Prepare the environment
  * Remove existing files from source: ```rm -rf ~/source/*```
