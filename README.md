@@ -26,7 +26,7 @@ In the following command, the TCP port on the host will equal 10000 + your UID
  * Remove the container: ```docker rm ${USER}-running-app```
 
 ## Run the Apache2 docker image with the specified TCP/IP port
-In the following command, the TCP port on the host will equal 10000 + your UID, the 'Kitty' directory will contain your web content
+In the following command, the TCP port on the host will equal 10000 + your UID, content will come from the 'Kitty' directory. 
  * Run the tagged image as a container: 
  ```
  docker run -dit --name ${USER}-kitty-app \
