@@ -51,7 +51,7 @@ In the following command, the TCP port on the host will equal 10000 + your UID, 
  ${USER}-apache2
  ```
  
- Edit source/Kitty/index.html
+ Edit ```source/Kitty/index.html``` then reload your browser.  
  
  * Stop the container: ```docker stop ${USER}-kitty-app```
  * Remove the container: ```docker rm ${USER}-kitty-app```
