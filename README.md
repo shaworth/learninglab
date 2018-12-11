@@ -9,7 +9,7 @@
  * Change to your home directory: ```cd ~```
  * Remove existing files from source: ```rm -rf ~/source/*```
  * Change into the source directory: ```cd ~/source```
- * Extract starter files: ```tar xzvf /opt/lab/docker.tar.gz ~/source/```
+ * Extract starter files: ```tar xzvf /opt/lab/docker.tar.gz ```
 
 ## Basic Docker Commands
  * Check the docker version: ```docker version```
