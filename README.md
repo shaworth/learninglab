@@ -28,21 +28,29 @@ Remove the comments from the Docker file, repeat the above
 In the following command, the TCP port on the host will equal 10000 + your UID 
  * Run the tagged image as a container: 
  ```
- docker run -dit --name ${USER}-running-app -p $(expr 10000 + ${UID}):80 ${USER}-apache2
+ docker run -dit --name ${USER}-running-app \
+ -p $(expr 10000 + ${UID}):80 \
+ ${USER}-apache2
  ```
  
  Print the link to your container
  
- ```echo "http://172.31.0.9:$(expr 10000 + ${UID})/"```
+ ```~/source/learning_lab/show_links.sh```
  
- Copy and past the results into a new browser tab
+ Open the first URL in your browser
  
  * Show the running containers: ```docker ps```
  * Stop the container: ```docker stop ${USER}-running-app```
  * Remove the container: ```docker rm ${USER}-running-app```
 
 ## Run the Apache2 docker image with the specified TCP/IP port
-In the following command, the TCP port on the host will equal 10000 + your UID, content will come from the 'Kitty' directory. 
+In the steps below you will create the same docker container, except this time you will
+use the argument ``` -v ${HOME}/source/learning_lab/Kitty:/usr/local/apache2/htdocs/ ```
+to specify that ```/user/local/apache2/htdocs``` in the running container 
+will point to the contents of ```~/source/learning_lab/Kitty/```.
+In effect, these two directories are shared between the host and the running container.
+This is the technique used to provide containers with persistant storage.
+
  * Run the tagged image as a container: 
  ```
  docker run -dit --name ${USER}-kitty-app \
@@ -51,8 +59,14 @@ In the following command, the TCP port on the host will equal 10000 + your UID, 
  ${USER}-apache2
  ```
  
- Edit ```source/Kitty/index.html``` then reload your browser.  
+  Print the link to your container
  
+ ```learning_lab/show_links.sh```
+
+ Open the secund URL in your browser
+ 
+ Time too demostrate that the host and the container are sharing the same filesystem.
+ Within cloud9, open and edit ```source/Kitty/index.html``` then reload your browser.  
+  
  * Stop the container: ```docker stop ${USER}-kitty-app```
  * Remove the container: ```docker rm ${USER}-kitty-app```
-
