@@ -47,7 +47,7 @@ In the following command, the TCP port on the host will equal 10000 + your UID, 
  ```
  docker run -dit --name ${USER}-kitty-app \
  -v ${HOME}/source/learning_lab/Kitty:/usr/local/apache2/htdocs/ \
- -p $(expr 10000 + ${UID}):80 \
+ -p $(expr 11000 + ${UID}):80 \
  ${USER}-apache2
  ```
  
