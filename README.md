@@ -61,7 +61,7 @@ This is the technique used to provide containers with persistant storage.
  
   Print the link to your container
  
- ```learning_lab/show_links.sh```
+ ```~/source/learning_lab/show_links.sh```
 
  Open the secund URL in your browser
  
