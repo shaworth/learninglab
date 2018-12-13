@@ -65,8 +65,8 @@ This is the technique used to provide containers with persistant storage.
 
  Open the secund URL in your browser
  
- Time too demostrate that the host and the container are sharing the same filesystem.
- Within cloud9, open and edit ```source/Kitty/index.html``` then reload your browser.  
+ Time to demostrate that the host and the container are sharing the same filesystem.
+ Within cloud9, open and edit ```~/source/Kitty/index.html``` then reload your browser.  
   
  * Stop the container: ```docker stop ${USER}-kitty-app```
  * Remove the container: ```docker rm ${USER}-kitty-app```
