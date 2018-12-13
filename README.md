@@ -5,7 +5,7 @@
  * Echo command w variable: ```echo "Hello $USER"```
  * Again: ```echo "${UID}"```
 
-## Prepare the environment
+## Prepare the environment (note, adjust this if you downloaded docker.tar.gz from github)
  * Change to your home directory: ```cd ~```
  * Remove existing files from source: ```rm -rf ~/source/*```
  * Change into the source directory: ```cd ~/source```
