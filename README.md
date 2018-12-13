@@ -43,7 +43,7 @@ In the following command, the TCP port on the host will equal 10000 + your UID
  * Stop the container: ```docker stop ${USER}-running-app```
  * Remove the container: ```docker rm ${USER}-running-app```
 
-## Run the Apache2 docker image with the specified TCP/IP port
+## Run the Apache2 docker image with a storage volume
 In the steps below you will create the same docker container, except this time you will
 use the argument ``` -v ${HOME}/source/learning_lab/Kitty:/usr/local/apache2/htdocs/ ```
 to specify that ```/user/local/apache2/htdocs``` in the running container 
